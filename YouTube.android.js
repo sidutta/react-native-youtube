@@ -66,6 +66,8 @@ export default class YouTube extends React.Component {
   }
 
   _onChangeState(event) {
+    if(event.nativeEvent.state=='playing')
+      this.setState({ hiddenRenderText: 'm' })    
     if (this.props.onChangeState) this.props.onChangeState(event.nativeEvent);
   }
 
