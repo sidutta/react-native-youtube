@@ -144,5 +144,6 @@ const styles = StyleSheet.create({
     top: 10,
     left: 0,
     zIndex: -10000,
+    color: 'white',
   },
 });
